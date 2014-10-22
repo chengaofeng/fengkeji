@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>weixin-fw</artifactId>
+  <version>${weixin.version}</version>
+  <packaging>jar</packaging>
+
+  <name>weixin-fw</name>
+  <parent>
+		<groupId>org.fengkeji.weixin</groupId>
+		<artifactId>weixin-parent</artifactId>
+		<relativePath>../weixin-parent</relativePath>
+		<version>1.0.0.RELEASE</version>
+	</parent>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+</project>
