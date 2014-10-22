@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://alfa2.io/thymeleaf"
+	xml:lang="ja" lang="ja">
+<head>
+<title><sitemesh:write property='title' /></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link th:include="common/common_css :: css" th:remove="tag" />
+<script th:include="common/header_js :: js" th:remove="tag" />
+<sitemesh:write property='head' />
+
+</head>
+<body>
+	<div class="row-fluid">
+		<div id="data-global-message-content">
+			<span th:include="common/message_header :: header" th:remove="tag"></span>
+		</div>
+		<div id="data-sitemesh-content" class="">
+			<sitemesh:write property='body' />
+		</div>
+	</div>
+	<script th:include="common/footer_js :: js" th:remove="tag" />
+	<div>
+		<span th:include="common/footer :: footer" th:remove="tag"></span>
+	</div>
+	<span>
+        <div th:include="/common/execute_dialog :: execute_dialog" th:remove="tag" />
+	</span>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://alfa2.io/thymeleaf" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<div th:fragment="execute_dialog" th:remove="tag">
+  <!-- 処理中ダイアログ -->
+	<div id="executeDialog" style="display: none;">
+		<img th:src="@{/assets/image/wait_image.gif}"
+			src="../../assets/image/wait_image.gif" />
+	</div>
+</div>
+</html>

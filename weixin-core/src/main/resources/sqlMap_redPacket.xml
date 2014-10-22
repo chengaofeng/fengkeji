@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap  PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd"> 
+<sqlMap namespace="RedPacket"> 
+   
+   <select id="selectRedPacket001" resultClass="org.fengkeji.weixin.entity.RedPacket"> 
+        select  
+        RED_PACKET_ID as redPacketId,
+        RED_PACKET_MONEY as redPacketMoney,
+        RED_PACKET_NUM as redPacketNum,
+        RED_PACKET_LAST as redPacketLast,
+        RED_PACKET_CONTENT as redPacketContent,
+        RED_PACKET_TYPE as redPackageType,
+        LIMIT_TIME as limitTime,
+        INSERT_TIME as insertTime
+        from red_packet 
+   </select> 
+   
+      <select id="selectRedPacket002" resultClass="org.fengkeji.weixin.entity.RedPacket"> 
+        select  
+        RED_PACKET_ID as redPacketId,
+        RED_PACKET_MONEY as redPacketMoney,
+        RED_PACKET_NUM as redPacketNum,
+        RED_PACKET_LAST as redPacketLast,
+        RED_PACKET_TYPE as redPackageType,
+        LIMIT_TIME as limitTime
+        from red_packet 
+        where RED_PACKET_ID=#redPacketId#
+   </select> 
+   
+      <update id="updateRedPacket001" parameterClass="org.fengkeji.weixin.entity.RedPacket">
+        UPDATE red_packet
+        SET RED_PACKET_LAST = #redPacketLast#
+        where RED_PACKET_ID=#redPacketId#
+    </update>
+</sqlMap> 

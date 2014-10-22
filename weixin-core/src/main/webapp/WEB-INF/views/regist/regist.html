@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>  
+<html xmlns:th="http://www.thymeleaf.org">  
+<head>  
+    <title>用户信息注册</title>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+</head>  
+<body>  
+	<form action="" th:action="@{/weixin/regist/regist}" method="post"
+		th:object="${registForm}" id="registForm">
+
+		<div class="wx-tool">
+			<input type="submit" value="注册"/>
+		</div>
+		<div class="wx-contents wx-w50">
+			<div class="wx-maincont">
+				<table class="wx-all">
+					<tr>
+						<th class="wx-inCalLabel wx-w35"><label for="userName">姓名</label></th>
+						<td class="wx-showVal"><input type="text" id="userName" name="userName"
+							th:field="*{userName}" />
+							</td>
+					</tr>
+					<tr>
+						<th class="wx-inCalLabel wx-w35"><label for="sex">性别</label></th>
+						<td class="wx-showVal"><input type="text" id="sex" name="sex"
+							th:field="*{sex}"/></td>
+					</tr>
+					<tr>
+						<th class="wx-inCalLabel wx-w35"><label for="telno">电话号码</label></th>
+						<td class="wx-showVal"><input type="text" id="telno" name="telno"
+							th:field="*{telno}" validate="wx-telno" /></td>
+					</tr>
+					
+				</table>
+
+			</div>
+		</div>
+		<input type="hidden" th:field="*{openId}"/>
+	</form>
+</body>  
+</html>  

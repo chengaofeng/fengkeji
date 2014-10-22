@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap  PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd"> 
+<sqlMap namespace="Fkj001t"> 
+   
+   <insert id="insertFkj001t001" parameterClass="org.fengkeji.weixin.entity.Fkj001tDto"> 
+        INSERT
+        INTO
+        FKJ001T (
+        <!-- 用户OpenID -->
+        OPEN_ID,CREATEDATE) VALUES ( 
+        #openId#,#createDate#  
+        )
+   </insert> 
+   
+   <select id="selectFkj001tCnt001" parameterClass="java.lang.String" resultClass="int"> 
+        <!--SELECT 用户table-->
+        SELECT
+            COUNT (1) AS cnt
+        FROM
+            FKJ001T 
+        where OPEN_ID=#openId#  
+   </select>
+   
+       <select id="selectFkj001t001" parameterClass="java.lang.String" resultClass="org.fengkeji.weixin.entity.Fkj001tDto"> 
+        select  
+        OPEN_ID as openId,
+        USER_NAME as userName,
+        SEX as sex,
+        TELNO as telno,
+        MESSAGE_COUNT as messageCnt,
+        CREATEDATE as createDate,
+        REGISTDATE as registDate
+        from FKJ001T 
+        where OPEN_ID=#openId#  
+   </select> 
+   
+     <update id="updateFkj001t002" parameterClass="org.fengkeji.weixin.entity.Fkj001tDto">
+        UPDATE FKJ001T
+        SET USER_NAME = #userName#,
+            SEX = #sex#,
+            TELNO = #telno#,
+            REGISTDATE = #registDate#
+        WHERE OPEN_ID = #openId#
+    </update>
+    
+   <update id="updateFkj001t004" parameterClass="org.fengkeji.weixin.entity.Fkj001tDto">
+        UPDATE FKJ001T
+        SET MESSAGE_COUNT = #messageCnt#
+        WHERE OPEN_ID = #openId#
+    </update>
+    
+    <select id="selectFkj001t004" parameterClass="java.lang.String" resultClass="int"> 
+        select  
+        MESSAGE_COUNT as messageCnt
+        from FKJ001T 
+        where OPEN_ID=#openId#  
+   </select> 
+</sqlMap> 

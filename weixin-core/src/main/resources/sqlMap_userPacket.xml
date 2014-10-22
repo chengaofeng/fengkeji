@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap  PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd"> 
+<sqlMap namespace="UserPacket"> 
+   
+   <insert id="insertUserPacket001" parameterClass="org.fengkeji.weixin.entity.UserPacket"> 
+        INSERT
+        INTO
+        user_packet (
+        <!-- 用户OpenID -->
+        open_id,
+        ecoupon_id,
+        ecoupon_type
+        ) VALUES ( 
+        #openId#,
+        #ecouponId#,
+        #ecouponType#
+        )
+   </insert> 
+   
+</sqlMap> 

@@ -1,0 +1,931 @@
+/* 共通レイアウト */
+/* 以下、再考します */
+/* ・各種の値 */
+/* ・項目名称 */
+/* ・CSSの表記法 */
+/* ・不足部分など */
+@charset "utf-8";
+
+/* 共通．divの設定．高の設定 */
+div.wx-h5 {
+    height: 5%;
+}
+
+div.wx-h10 {
+    height: 10%;
+}
+
+div.wx-h15 {
+    height: 15%;
+}
+
+div.wx-h20 {
+    height: 20%;
+}
+
+div.wx-h25 {
+    height: 25%;
+}
+
+div.wx-h30 {
+    height: 30%;
+}
+
+div.wx-h35 {
+    height: 35%;
+}
+
+div.wx-h40 {
+    height: 40%;
+}
+
+div.wx-h45 {
+    height: 45%;
+}
+
+div.wx-h50 {
+    height: 50%;
+}
+
+div.wx-h55 {
+    height: 55%;
+}
+
+div.wx-h60 {
+    height: 60%;
+}
+
+div.wx-h65 {
+    height: 65%;
+}
+
+div.wx-h70 {
+    height: 70%;
+}
+
+/* 共通．tableの設定 */
+table {
+    font-size: 23pt;
+    font-family: "ＭＳ ゴシック", "MS Gothic";
+}
+
+/* 共通．tableの設定．幅指定．中 */
+table.wx-w75 {
+    width: 75%;
+}
+
+/* 共通．tableの設定．幅指定．小 */
+table.wx-w50 {
+    width: 50%;
+}
+
+/* 共通．tableの設定．幅指定．単項目 */
+table.wx-w20 {
+    width: 20%
+}
+
+/* 共通．tableの設定．高指定．行高 */
+table th {
+	font-size:23pt;
+    height: 35px;
+	padding:0px 0px 0px 1px;
+	font-weight:bold;
+	vertical-align:inherit;
+}
+
+/* Jqueryのスタイルとの矛盾を解決するために、スタイルを追加する --開始 */
+table tbody th {
+	font-size:23pt;
+    height: 35px;
+	padding:0px 0px 0px 1px;
+	font-weight:bold;
+	vertical-align:inherit;
+}
+
+table th label {
+	font-size:23pt;
+	font-weight:bold;
+	text-align:inherit;
+}
+
+table td {
+	font-size:23pt;
+	height: 35px;
+	padding:0px 0px 0px 1px;
+	vertical-align:inherit;
+}
+
+table tbody td {
+	font-size:23pt;
+	height: 35px;
+	padding:0px 0px 0px 1px;
+	vertical-align:inherit;
+}
+
+/* Jqueryのスタイルとの矛盾を解決するために、スタイルを追加する  --終了*/
+
+/* 共通．幅の設定 */
+.wx-w2 {
+    width: 2%;
+}
+
+
+.wx-w3 {
+    width: 3%;
+}
+
+.wx-w4 {
+    width: 4%;
+}
+
+.wx-w5 {
+    width: 5%;
+}
+
+.wx-w6 {
+    width: 6%;
+}
+
+.wx-w8 {
+    width: 8%;
+}
+
+.wx-w85 {
+    width: 85px;
+}
+
+.wx-w9 {
+    width: 9%;
+}
+
+.wx-w10 {
+    width: 10%;
+}
+
+.wx-w12 {
+    width: 12%;
+}
+
+
+.wx-w15 {
+    width: 15%;
+}
+
+.wx-w16 {
+    width: 16%;
+}
+
+.wx-w18 {
+    width: 18%;
+}
+
+.wx-w20 {
+    width: 20%;
+}
+
+.wx-w23 {
+    width: 23%;
+}
+
+.wx-w25 {
+    width: 25%;
+}
+
+.wx-w29 {
+    width: 29%;
+}
+
+.wx-w35 {
+    width: 35%;
+}
+
+.wx-w40 {
+    width: 40%;
+}
+
+.wx-w50 {
+    width: 50%;
+}
+.wx-w60 {
+    width: 60%;
+}
+.wx-w70 {
+    width: 70%;
+}
+table.wx-all {
+    width: 100%;
+}
+/* 共通．文字位置調整．左 */
+.wx-left {
+    text-align: left;
+}
+
+/* 共通．文字位置調整．中 */
+.wx-center {
+    text-align: center;
+}
+
+/* 共通．文字位置調整．右 */
+.wx-right {
+    text-align: right;
+}
+
+/* 共通．ボタンの設定 */
+input[type="button"] {
+    font-size: 23pt;
+    font-weight: bold;
+    text-align: center;
+    cursor: hand;
+}
+
+/* 共通．ボタンの設定 */
+input[type="submit"] {
+    font-size: 23pt;
+    font-weight: bold;
+    text-align: center;
+    cursor: hand;
+}
+
+/* 共通．入力項目IME設定．日付 */
+.date {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．年月 */
+.yymm {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．年度 */
+.nendo {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．時刻 */
+.time {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．金額 */
+.kngk {
+    ime-mode: disabled;
+    text-align:right;
+}
+
+/* 共通．入力項目IME設定．数値 */
+.number {
+    ime-mode: disabled;
+    text-align:right;
+}
+
+/* 共通．入力項目IME設定．店番号 */
+.ten {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．CIF番号 */
+.cif {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．電話番号 */
+.phone {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．郵便番号 */
+.yubin {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．コード */
+.code {
+    ime-mode: inactive;
+}
+
+/* 共通．入力項目IME設定．申込受付番号 */
+.orkukno {
+    ime-mode: disabled;
+}
+
+/* 共通．入力項目IME設定．全角 */
+.zenkaku {
+    ime-mode: active;
+}
+
+/* 共通．入力項目IME設定．半角 */
+.hankaku {
+    ime-mode: active;
+}
+
+/* 共通．入力項目IME設定．カナ */
+.kana {
+    ime-mode: active;
+}
+
+/* 共通．入力項目IME設定．文字列 */
+.anystring {
+    ime-mode: active;
+}
+
+/* 共通．入力項目IME設定．番号 */
+.bangou {
+    ime-mode: disabled;
+}
+
+/* 共通．スクロールバーの設定 */
+div.wx-overflow-h350 {
+    width: 100%;
+    max-height: 350px;
+    /* IE6対応 */
+    height: expression(height > 350 ? "350px" : height + "px");
+    overflow-y: auto;
+}
+
+/* 待ち画面画像 */
+/* 画像の透過（#808080を透過させる） */
+img {
+	filter:chroma(color=#808080);
+}
+
+/* 待ち画面背景  ui-widget-overlayのスタイルをオーバーライトする */
+.ui-widget-overlay
+{
+	width:100% !important;
+	height:100% !important;
+	min-height:100% !important;
+	min-width:100% !important;
+	top:0px !important;
+	left:0px !important;
+	text-align:center !important;
+	font-size:23pt !important;
+	background:#a9a9a9 !important;
+	filter: Alpha(opacity=50) !important;
+    z-index: 99;
+}
+
+#executeDialog {
+    position: absolute;
+    padding-left:0px;
+    padding-top:0px;
+    z-index: 100;
+}
+
+/* タイトルバー  開始 */
+div.wx-area-title {
+    color: #FFFFFF;
+    background-color: #909090;
+    font-size: 16pt;
+    font-weight: bold;
+    height: 30px;
+    position: relative;
+    padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 2px;
+}
+
+.wx-area-title #gamenId{
+	margin-top: 5px;	
+}
+.wx-area-title .right-menu{
+	margin-top: 5px;	
+	font-size: 23pt;
+	float: right;
+}
+.wx-area-title .gyomu-date{
+	margin-right: 1em;
+}
+.wx-area-title .pulldown-menu{
+	margin-right: 1em;
+}
+
+.wx-area-title a {
+    color: #FFFFFF;
+}
+.wx-area-title a:hover {
+    color: #8888FF;
+}
+
+.ui-menu {
+	width: 15%;
+}
+/* タイトルバー  終了 */
+
+/* ツールバー */
+div.wx-tool {
+    background-color: #F2F2F2;
+    text-align: right;
+    height: 30%;
+    position: relative;
+	padding-right: 1em;
+	z-index: 0;
+}
+
+/* ツールバー．ボタン */
+input.wx-toolSw {
+    border-color: #FFF6D3;
+    background-color: #FFF6D3;
+    border-style: outset;
+    height: 6%;
+    border-width: 3%;
+}
+
+/* ツールバー．ボタン．（オンマウス時） */
+input.wx-toolSw:hover {
+    border-color: #FFF6D3;
+    background-color: #FFEE33;
+}
+
+/* コンテンツエリア */
+body {
+    font-family: "ＭＳ ゴシック", "MS Gothic";
+    color: #000000;
+    background-color: #F0F0AF;
+    font-size: 23pt;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+/* コンテンツエリア．フォント */
+button {
+    font-family: "ＭＳ ゴシック", "MS Gothic";
+    font-size: 23pt;
+}
+
+/* コンテンツエリア．フォント */
+input,select,option,textarea {
+    font-family: "ＭＳ ゴシック", "MS Gothic";
+    font-size: 23pt;
+}
+
+/* コンテンツエリア．入力項目ラベル */
+th.wx-inCalLabel {
+    background-color: #FFD85D;
+}
+
+/* コンテンツエリア．テキスト入力項目（背景） */
+td.wx-showVal {
+    background-color: #FFF6D3;
+}
+
+/** コンテンツエリア.テキスト入力エラー（背景） */
+.wx-client-error {
+    background-color: #F08080 !important;
+}
+
+/* コンテンツエリア．テキスト出力項目（背景）．情報(正常)アナウンス */
+.wx-info {
+    color: #FFFFFF;
+    background-color: #3366FF;
+}
+
+/* コンテンツエリア．テキスト出力項目（背景）．警告アナウンス */
+.wx-alert {
+    color: #FFFFFF;
+    background-color: #F79670;
+}
+
+/* コンテンツエリア．テキスト出力項目（背景）．異常(エラー)アナウンス */
+.wx-error {
+    color: #FFFFFF;
+    background-color: #FF0000;
+}
+
+/* コンテンツエリア．ボタン（検索・選択等） */
+/* コンテンツエリア．結果出力（ボタン・ページリンク背景）．配置ボタン */
+input.wx-submitSw {
+    color: #000000;
+    border-color: #FFBB33;
+    background-color: #FFBB33;
+    border-style: outset;
+    height: 25px;
+    border-width: 2px;
+}
+
+/* コンテンツエリア．ボタン（検索・選択等）．（オンマウス時） */
+/* コンテンツエリア．結果出力（ボタン・ページリンク背景）．配置ボタン．（オンマウス時） */
+input.wx-submitSw:hover {
+    border-color: #FFA500;
+    background-color: #FFA500;
+}
+
+/* コンテンツエリア．結果出力（ボタン・ページリンク背景） */
+table.wx-outHead {
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #505050;
+    margin: 0px 0px 0px 4%;
+}
+
+/* 修正前のスタイルとの比較を行う必要があるので、現階段で削除しなくて、本番開発前に削除予定。  */
+/* ページリンク共通設定 */
+label.wx-pageLink {
+    color: #FFFFFF;
+    margin: 0px 5% 0px 10%;
+}
+
+/* コンテンツエリア．結果出力（ボタン・ページリンク背景）．ページリンク */
+label.wx-pageLink a {
+    color: #FFFFFF;
+}
+
+/* コンテンツエリア．結果出力（ボタン・ページリンク背景）．ページリンク．（オンマウス時） */
+label.wx-pageLink a:hover {
+    color: #8888FF;
+}
+
+/* コンテンツエリア．結果出力（ボタン・ページリンク背景）．ページリンク．（アクティブ時） */
+label.wx-pageLinkAct {
+    color: #8888FF;
+    background-color: #FFFFFF;
+}
+
+/* ALFA FWのページングタグに合わせるためのスタイルを修正*/
+.pagination{
+	border:0px !important;
+    color: #FFFFFF;
+    margin: 0px 5px 0px 0px;
+    font-weight:bold;
+    height:30px;
+}
+
+.pagination ul {
+    margin-left:5px;
+	border:0px !important;
+}
+
+.pagination li {
+	border:0px !important;
+}
+
+.pagination a {
+	color: #FFFFFF;
+	text-decoration:underline;
+	border:0px !important;
+    font-weight:bold;
+    line-height:18px;
+    padding:0px;
+    margin-top:3px;
+    margin-bottom:1px;
+    margin-left:5px;
+    margin-right:10px;
+}
+
+.pagination a:hover {
+	color: #8888FF;
+    background-color:transparent;
+}
+
+.pagination .active a{
+    color: #8888FF;
+    background-color: #FFFFFF;
+	text-decoration:none;
+}
+
+.pagination .disabled a,.pagination .disabled a:hover{
+    color: #FFFFFF;
+    background-color:transparent;
+	text-decoration:none;
+}
+
+.pagination .last a {
+    color: #FFFFFF;
+    margin-left:5px;
+    margin-right:0px;
+}
+.pagination .last a:hover {
+	color: #8888FF;
+    background-color:transparent;
+}
+
+/* コンテンツエリア．結果出力（テーブル） */
+table.wx-outData {
+    color: #FF0000;
+    background-color: #D19D00;
+    border-collapse: separate;
+    margin: 0px 0px 0px 40px;
+    border-spacing: 1px;
+}
+
+/* コンテンツエリア．結果出力（テーブル）．表ヘッダ（項目ラベル） */
+th.wx-outLabel {
+    color: #000000;
+    background-color: #FFD85D;
+    border-collapse: separate;
+    margin: 0px 0px 0px 40px;
+    border-spacing: 1px;
+    text-align: center;
+}
+
+/* コンテンツエリア．結果出力（テーブル）．(奇数列) */
+tr.wx-outValOdd {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* コンテンツエリア．結果出力（テーブル）．表ボディ(偶数列） */
+tr.wx-outValEve {
+    color: #000000;
+    background-color: #F0F0F0;
+}
+
+/* コンテンツエリア．結果出力（テーブル）．表ボディ(リンク） */
+tr a {
+    color: #0000FF;
+}
+
+/* コンテンツエリア．結果出力（テーブル）．表ボディ(リンク）．（オンマウス時） */
+tr a:hover {
+    color: #8888FF;
+}
+
+/* 関連業務ボタンエリア（メニューバー））．関連業務ボタン */
+input.wx-menuSwT {
+    border-color: #F0C5AF;
+    background-color: #F0C5AF;
+    border-style: outset;
+    width: auto;
+    height: 30px;
+    border-width: 2px;
+}
+
+/* 関連業務ボタンエリア（メニューバー））．関連業務ボタン．（オンマウス時） */
+input.wx-menuSwT:hover {
+    border-color: #F0957F;
+    background-color: #F0957F;
+}
+
+/* メッセージダイアログ */
+#messageArea {
+    font-size: 23pt;
+    max-height: 100px;
+    overflow: auto;
+    display: none;
+    color: #000000;
+    background-color: #EEEEEE;
+    padding-top:0.2em;
+}
+
+.ui-dialog {
+	padding-top:0.1em !important;
+}
+
+/* 一覧出力ラベル */
+table.wx-message {
+    background-color: #000000;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+/* メッセージダイアログ．タイトルバー */
+span.wx-msgTitlebar {
+	color: #FFFFFF !important;
+	background-color: #F6A828 !important;
+    font-size: 23pt !important;
+    height:25px !important;
+	width:100% !important;
+	float:left !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	margin:0px 0px !important;
+}
+
+div.wx-msgDialogTitlebar {
+	color: #FFFFFF !important;
+	position:relative;
+	padding:0px 0px 0px 0px !important;
+	border:0px !important;
+}
+
+/* メッセージダイアログ．メッセージ一覧ラベル */
+th.wx-outLabelMsg {
+    background-color: #FFE96E;
+    font-size: 23pt;
+    height: 20px;
+    text-align:center;
+}
+
+/* メッセージダイアログ．メッセージ一覧内容（エラー） */
+tr.wx-messageErr {
+    font-size: 23pt;
+    height: 20px;
+    background-color: #FFCCCC;
+}
+/* メッセージダイアログ．メッセージ一覧内容（情報） */
+tr.wx-messageInfo {
+    font-size: 23pt;
+    height: 20px;
+    background-color: #DDDDFF;
+}
+/* メッセージダイアログ．メッセージ一覧内容（確認） */
+tr.wx-messageConfirm {
+    font-size: 23pt;
+    height: 20px;
+    background-color: #FFFF88;
+}
+
+/* メッセージダイアログ．配置ボタン */
+button.wx-msgDialog {
+    border-color: #FFEE66;
+    background-color: #FFEE66;
+    border-style: outset;
+    border-width: 2px;
+    font-weight: bold;
+    font-size: 23pt;
+    height:30px;
+    padding:5px;
+    margin:0em 0em 0em 0.5em !important;
+}
+
+/* メッセージダイアログ．配置ボタン．（オンマウス時） */
+button.wx-msgDialog:hover {
+    background-color: #FFBB33;
+    border-color: #FFBB33;
+}
+
+/* メッセージタイトルバーの閉じるボタンの枠線の青色を消除する */
+.ui-dialog-titlebar-close {
+	border:0px !important;
+}
+
+
+/* ここから、最後までのソースは、「共通、UI規約」以外ソース、 */
+/* 要るかどうか本番実装最確認する。要る場合、上に移動する。 */
+
+
+/* コンテンツ */
+div.wx-contents {
+    width: auto;
+    position: relative;
+    background-color: #F0F0AF;
+}
+
+/* メインコンテンツ */
+div.wx-maincont {
+    width: auto;
+    height: auto;
+    position: relative;
+    overflow: auto;
+    border: 1px solid gray;
+    background-color: #F0F0AF;
+}
+
+/* メインコンテンツ（子画面） */
+div.wx-maincontSub {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid gray;
+    background-color: #F0F0AF;
+}
+
+/* メニューバーエリア */
+div.wx-menu {
+    width: 170px;
+    height: 700px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid gray;
+    background-color: #F0F0AF;
+}
+
+/* メインコンテンツ分割 */
+/* 使用する場合、高さ指定クラスも同時使用する */
+
+/* メインコンテンツ・上下分割 */
+div.wx-contDiv {
+    position: relative;
+    overflow: auto;
+}
+
+/* メインコンテンツ・上下分割（PDF表示用） */
+div.wx-contDivImage {
+    position: relative;
+    overflow: hidden;
+}
+
+/* メインコンテンツ・左右分割（左） */
+/* 現在、子画面は左右分割不可です */
+div.wx-contDivL {
+    width: 596px;
+    position: relative;
+    overflow: auto;
+}
+
+/* メインコンテンツ・左右分割（PDF表示用） */
+div.wx-contDivLImage {
+    width: 596px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* メインコンテンツ・左右分割（右） */
+div.wx-contDivR {
+    width: 596px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    overflow: auto;
+}
+
+/* メインコンテンツ・左右分割（右・PDF表示用） */
+div.wx-contDivRImage {
+    width: 596px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* 一覧出力 情報（青） */
+td.wx-outValInfo {
+    color: #FFFFFF;
+    background-color: #3366FF;
+}
+
+/* 一覧出力 エラー色（赤） */
+td.wx-outValErr {
+    color: #FFFFFF;
+    background-color: #FF0000;
+}
+
+/* 一覧出力 警告色（黄） */
+td.wx-outIValConfirm {
+    color: #FFFFFF;
+    background-color: #F79670;
+}
+/* 一覧出力 情報（青） */
+tr.wx-outValInfo {
+    color: #FFFFFF;
+    background-color: #3366FF;
+}
+
+/* 一覧出力 エラー色（赤） */
+tr.wx-outValErr {
+    color: #FFFFFF;
+    background-color: #FF0000;
+}
+
+/* 一覧出力 警告色（黄） */
+tr.wx-outIValConfirm {
+    color: #FFFFFF;
+    background-color: #F79670;
+}
+
+input.wx-toolDisSw {
+    border-color: #C9C9C9;
+    background-color: #D0DD0;
+    border-style: outset;
+    /*width: 70px;*/
+    height: 30px;
+    border-width: 3px;
+}
+
+/* 検索系（押下不可） */
+input.wx-submitDisSw {
+    color: #F2F2F2;
+    border-color: #D0D0D0;
+    background-color: #C9C9C9;
+    border-style: outset;
+    height: 25px;
+    border-width: 2px;
+}
+
+/* 遷移 */
+input.wx-transSw {
+    border-color: #DFB83D;
+    background-color: #FFD85D;
+    border-style: outset;
+    width: 50px;
+    height: 25px;
+    border-width: 2px;
+}
+
+/* メニュー */
+input.wx-menuSw {
+    border-color: #DFB83D;
+    background-color: #FFD85D;
+    border-style: outset;
+    width: 145px;
+    height: 30px;
+    border-width: 2px;
+}
+
+/* 共通．スクロールの設定 */
+.st-oscroll{
+    overflow: scroll;
+    margin-left: 40px;
+    width: 1100px;
+    table-layout:fixed;
+}
+
+div.copyright {
+	font-weight: bold;
+    font-size: 23pt;
+	border-color: #C9C9C9;
+    background-color: #D0DD0;
+    border-style: outset;
+}

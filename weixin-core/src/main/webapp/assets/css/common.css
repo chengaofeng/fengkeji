@@ -1,0 +1,1283 @@
+@charset "UTF-8";
+/*------------------------------------------------------------*
+ * 画面要件に沿ったスタイルを選択し、使用する。
+ * 必要に応じて、スタイルを追加することは禁止しない。
+ * jqeury megamenu TODO OSSライブラリのcssを直接修正しない。アップグレードの際に差し替えができないため。
+ * see：assets/lib/jquery/jquery-ui-bootstrap/bootstrap/bootstrap.css
+ *------------------------------------------------------------*/
+/*============================================================*
+ * エラー発生時
+ *============================================================*/
+.errorColor {
+    background: red;
+}
+
+.error {
+    color: red;
+    font-weight:bold;
+}
+.info {
+    color: blue;
+    font-weight:bold;
+}
+.warn {
+    color: blue;
+    font-weight:bold;
+}
+
+/*============================================================*
+ * 改行禁止
+ *============================================================*/
+/* 削除予定 */
+.autocomplete {
+    white-space: nowrap;
+}
+.td-nowrap {
+    white-space: nowrap;
+}
+/*============================================================*
+ * 改行許容（td、span要素は反映されない、ブラウザによっては未サポート）
+ *============================================================*/
+.wordwrap{
+	word-wrap:break-word;
+}
+
+
+/*============================================================*
+ * 要素の寄せ
+ *============================================================*/
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+/*============================================================*
+ * placeholderの色
+ *============================================================*/
+.tipped {
+    color: red; /* #D3D3D3;*/
+}
+
+/**
+ * twitter bootstrapの設定をcss名付きにしたもの
+ * デフォルトだとすべての要素に適用されるのでjquery uiと競合する。
+ * そのため明示的にcss付きで指定すれば使用可能なようにする。
+ */
+
+/*============================================================*
+ * label要素
+ *============================================================*/
+/*
+.label-required {
+    font-weight: bold;
+}
+
+.label-style, .label-style200, .label-style100, .label-style-right30,
+.input-text,
+.input-button,
+.input-file,
+.input-checkbox,
+.input-radio,
+.input-reset,
+.input-submit,
+.select-style,
+.input-textarea,
+.span-row-item {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.label-style,
+.label-style200,
+.label-style100,
+.label-style-right30{
+    padding-top: 2px;
+    font-size: 13px;
+    line-height: 18px;
+    float: left;
+    text-align: left;
+    color: #404040;
+    margin-right: 10px;
+}
+
+.label-style {
+    width: 130px;
+}
+
+.label-style100 {
+    width: 100px;
+}
+.label-style200 {
+    width: 200px;
+}
+
+.label-style-right30 {
+	  width: 30px;
+	  text-align: right;
+	  margin-right: 0px;
+}
+*/
+/*============================================================*
+ * input要素
+ *============================================================*/
+
+/*
+.input-text,
+.input-button,
+.input-file,
+.input-checkbox,
+.input-radio,
+.input-reset,
+.input-submit,
+.select-style,
+.input-textarea,
+.span-row-item {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+.input-text,
+.select-style,
+.input-button,
+.input-file,
+.input-checkbox,
+.input-radio,
+.input-reset,
+.input-submit,
+.span-row-item {
+    line-height: normal;
+    *overflow: visible;
+}
+
+.input-button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.input-button,
+.input-reset,
+.input-submit {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+*/
+
+/* html5なので使用しない
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+*/
+
+/*
+.input-checkbox,
+.input-radio {
+    cursor: pointer;
+}
+
+.input-text,
+.input-textarea,
+.select-style {
+    display: inline-block;
+    width: 210px;
+    padding: 4px;
+    font-size: 13px;
+    line-height: 14px;
+    color: #808080;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.input-text,
+.select-style {
+    height: 14px;
+}
+
+.input-select {
+    padding: initial;
+}
+
+.input-checkbox,
+.input-radio {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 3px 0;
+    *margin-top: 0;
+
+    line-height: normal;
+    border: none;
+}
+
+.input-file {
+    background-color: #ffffff;
+    padding: initial;
+    border: initial;
+    line-height: initial;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-button,
+.input-reset,
+.input-submit {
+    width: auto;
+    height: auto;
+}
+
+.select-style,
+.input-file {
+    height: 26px;
+    *height: auto;
+    line-height: 26px;
+    *margin-top: 4px;
+
+}
+*/
+
+/** size */
+.input-date {
+    width: 72px;
+}
+
+.input1, .text1 {
+    width: 8px;
+}
+.input2, .text2 {
+    width: 16px;
+}
+.input3, .text3 {
+    width: 23px;
+}
+.input4, .text4 {
+    width: 30px;
+}
+.input5, .text5 {
+    width: 37px;
+}
+.input6, .text6 {
+    width: 44px;
+}
+.input7, .text7 {
+    width: 51px;
+}
+.input8, .text8 {
+    width: 59px;
+}
+.input9, .text9 {
+    width: 66px;
+}
+.input10, .text10 {
+    width: 72px;
+}
+.input11, .text11 {
+    width: 79px;
+}
+.input12, .text12 {
+    width: 86px;
+}
+.input13, .text13 {
+    width: 93px;
+}
+.input14, .text14 {
+    width: 100px;
+}
+.input15, .text15 {
+    width: 106px;
+}
+.input16, .text16 {
+    width: 113px;
+}
+.input17, .text17 {
+    width: 120px;
+}
+.input18, .text18 {
+    width: 127px;
+}
+.input19, .text19 {
+    width: 134px;
+}
+.input20, .text20 {
+    width: 141px;
+}
+.input21, .text21 {
+    width: 148px;
+}
+.input22, .text22 {
+    width: 155px;
+}
+.input23, .text23 {
+    width: 162px;
+}
+.input24, .text24 {
+    width: 169px;
+}
+.input25, .text25 {
+    width: 176px;
+}
+.input26, .text26 {
+    width: 183px;
+}
+.input27, .text27 {
+    width: 190px;
+}
+.input28, .text28 {
+    width: 197px;
+}
+.input29, .text29 {
+    width: 204px;
+}
+.input30, .text30 {
+    width: 211px;
+}
+.input31, .text31 {
+    width: 218px;
+}
+.input32, .text32 {
+    width: 225px;
+}
+.input33, .text33 {
+    width: 232px;
+}
+.input34, .text34 {
+    width: 239px;
+}
+.input35, .text35 {
+    width: 246px;
+}
+.input36, .text36 {
+    width: 253px;
+}
+.input37, .text37 {
+    width: 260px;
+}
+.input38, .text38 {
+    width: 267px;
+}
+.input39, .text39 {
+    width: 274px;
+}
+.input40, .text40 {
+    width: 281px;
+}
+.input41, .text41 {
+    width: 288px;
+}
+.input42, .text42 {
+    width: 295px;
+}
+.input43, .text43 {
+    width: 303px;
+}
+.input44, .text44 {
+    width: 310px;
+}
+.input45, .text45 {
+    width: 317px;
+}
+.input46, .text46 {
+    width: 324px;
+}
+.input47, .text47 {
+    width: 331px;
+}
+.input48, .text48 {
+    width: 338px;
+}
+.input49, .text49 {
+    width: 345px;
+}
+.input50, .text50 {
+    width: 352px;
+}
+.input51, .text51 {
+    width: 359px;
+}
+.input52, .text52 {
+    width: 366px;
+}
+.input53, .text53 {
+    width: 373px;
+}
+.input54, .text54 {
+    width: 380px;
+}
+.input55, .text55 {
+    width: 387px;
+}
+.input56, .text56 {
+    width: 394px;
+}
+.input57, .text57 {
+    width: 401px;
+}
+.input58, .text58 {
+    width: 408px;
+}
+.input59, .text59 {
+    width: 415px;
+}
+.input60, .text60 {
+    width: 422px;
+}
+.input61, .text61 {
+    width: 429px;
+}
+.input62, .text62 {
+    width: 436px;
+}
+.input63, .text63 {
+    width: 443px;
+}
+.input64, .text64 {
+    width: 450px;
+}
+.input65, .text65 {
+    width: 457px;
+}
+.input66, .text66 {
+    width: 464px;
+}
+.input67, .text67 {
+    width: 471px;
+}
+.input68, .text68 {
+    width: 478px;
+}
+.input69, .text69 {
+    width: 485px;
+}
+.input70, .text70 {
+    width: 492px;
+}
+.input71, .text71 {
+    width: 499px;
+}
+.input72, .text72 {
+    width: 506px;
+}
+.input73, .text73 {
+    width: 513px;
+}
+.input74, .text74 {
+    width: 520px;
+}
+.input75, .text75 {
+    width: 527px;
+}
+.input76, .text76 {
+    width: 534px;
+}
+.input77, .text77 {
+    width: 541px;
+}
+.input78, .text78 {
+    width: 548px;
+}
+.input79, .text79 {
+    width: 555px;
+}
+.input80, .text80 {
+    width: 562px;
+}
+.input81, .text81 {
+    width: 569px;
+}
+.input82, .text82 {
+    width: 576px;
+}
+.input83, .text83 {
+    width: 583px;
+}
+.input84, .text84 {
+    width: 590px;
+}
+.input85, .text85 {
+    width: 597px;
+}
+.input86, .text86 {
+    width: 603px;
+}
+.input87, .text87 {
+    width: 610px;
+}
+.input88, .text88 {
+    width: 617px;
+}
+.input89, .text89 {
+    width: 624px;
+}
+.input90, .text90 {
+    width: 631px;
+}
+.input91, .text91 {
+    width: 638px;
+}
+.input92, .text92 {
+    width: 645px;
+}
+.input93, .text93 {
+    width: 652px;
+}
+.input94, .text94 {
+    width: 659px;
+}
+.input95, .text95 {
+    width: 666px;
+}
+.input96, .text96 {
+    width: 673px;
+}
+.input97, .text97 {
+    width: 680px;
+}
+.input98, .text98 {
+    width: 687px;
+}
+.input99, .text99 {
+    width: 694px;
+}
+.input100, .text100 {
+    width: 701px;
+}
+.input101, .text101 {
+    width: 708px;
+}
+.input102, .text102 {
+    width: 715px;
+}
+.input103, .text103 {
+    width: 722px;
+}
+.input104, .text104 {
+    width: 729px;
+}
+.input105, .text105 {
+    width: 736px;
+}
+.input106, .text106 {
+    width: 743px;
+}
+.input107, .text107 {
+    width: 750px;
+}
+.input108, .text108 {
+    width: 757px;
+}
+.input109, .text109 {
+    width: 764px;
+}
+.input110, .text110 {
+    width: 771px;
+}
+.input111, .text111 {
+    width: 778px;
+}
+.input112, .text112 {
+    width: 785px;
+}
+.input113, .text113 {
+    width: 792px;
+}
+.input114, .text114 {
+    width: 799px;
+}
+.input115, .text115 {
+    width: 806px;
+}
+.input116, .text116 {
+    width: 813px;
+}
+.input117, .text117 {
+    width: 820px;
+}
+.input118, .text118 {
+    width: 827px;
+}
+.input119, .text119 {
+    width: 834px;
+}
+.input120, .text120 {
+    width: 841px;
+}
+.input121, .text121 {
+    width: 848px;
+}
+.input122, .text122 {
+    width: 855px;
+}
+.input123, .text123 {
+    width: 862px;
+}
+.input124, .text124 {
+    width: 869px;
+}
+.input125, .text125 {
+    width: 876px;
+}
+.input126, .text126 {
+    width: 883px;
+}
+.input127, .text127 {
+    width: 890px;
+}
+.input128, .text128 {
+    width: 897px;
+}
+.input129, .text129 {
+    width: 904px;
+}
+.input130, .text130 {
+    width: 911px;
+}
+.input131, .text131 {
+    width: 918px;
+}
+.input132, .text132 {
+    width: 925px;
+}
+.input133, .text133 {
+    width: 932px;
+}
+.input134, .text134 {
+    width: 939px;
+}
+.input135, .text135 {
+    width: 946px;
+}
+.input136, .text136 {
+    width: 953px;
+}
+.input137, .text137 {
+    width: 960px;
+}
+.input138, .text138 {
+    width: 967px;
+}
+.input139, .text139 {
+    width: 974px;
+}
+.input140, .text140 {
+    width: 981px;
+}
+.input141, .text141 {
+    width: 988px;
+}
+.input142, .text142 {
+    width: 995px;
+}
+.input143, .text143 {
+    width: 1002px;
+}
+.input144, .text144 {
+    width: 1009px;
+}
+.input145, .text145 {
+    width: 1016px;
+}
+.input146, .text146 {
+    width: 1023px;
+}
+.input147, .text147 {
+    width: 1030px;
+}
+.input148, .text148 {
+    width: 1037px;
+}
+.input149, .text149 {
+    width: 1044px;
+}
+.input150, .text150 {
+    width: 1051px;
+}
+
+
+.filename {
+    width: 180px;	
+}
+
+
+table.table-1400 {
+    width: 1400px;
+}
+
+.scrollable-v {
+    overflow: scroll;
+}
+.table-button {
+    font-size: 7px;
+}
+
+.under-button {
+    font-size: 14px;
+}
+
+/** ヘッダ用 */
+.span-header-item {
+    width: 160px;
+}
+
+.span-header-logout {
+    width: 110px;
+    margin-left: 0px;
+}
+
+/** 一覧のページ数用 */
+.span-page {
+    width: 500px;
+}
+/* 何に使用されているか不明
+.main{
+    padding-left: 10px;
+}
+*/
+.hidden-content {
+    display: none;
+}
+
+/** bootstrap */
+.container-fluid {
+   padding-right: 0px;
+   padding-left:  0px;
+}
+
+.container-fluid > .content {
+    margin-left: 180px;
+}
+
+/** TODO from twitter bootstrap2 */
+.row-fluid {
+    width: 100%;
+    *zoom: 1;
+}
+
+.row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+}
+
+.row-fluid:after {
+    clear: both;
+}
+
+.row-fluid > [class*="multi"] {
+    float: left;
+    margin-left: 1%;
+}
+
+.row-fluid > [class*="multi"]:first-child {
+    margin-left: 0;
+}
+
+
+.row-fluid > [class*="span"] {
+    float: left;
+    margin-left: 2.564102564%;
+}
+
+.row-fluid > [class*="span"]:first-child {
+    margin-left: 0;
+}
+
+.row-fluid > .span1, .row-fluid > .multi1 {
+    width: 5.982905983%;
+}
+
+.row-fluid > .span2, .row-fluid > .multi2 {
+    width: 10.2564102565%;
+}
+
+.row-fluid > .span3, .row-fluid > .multi3 {
+    width: 14.529914530000001%;
+}
+
+.row-fluid > .span4, .row-fluid > .multi4 {
+    width: 18.8034188035%;
+}
+
+.row-fluid > .span5, .row-fluid > .multi5 {
+    width: 23.076923077%;
+}
+
+.row-fluid > .span6, .row-fluid > .multi6 {
+    width: 27.3504273505%;
+}
+
+.row-fluid > .span7, .row-fluid > .multi7 {
+    width: 31.623931624%;
+}
+
+.row-fluid > .span8, .row-fluid > .multi8 {
+    width: 35.8974358975%;
+}
+
+.row-fluid > .span9, .row-fluid > .multi9 {
+    width: 40.170940171000005%;
+}
+
+.row-fluid > .span10, .row-fluid > .multi10 {
+    width: 44.4444444445%;
+}
+
+.row-fluid > .span11, .row-fluid > .multi11 {
+    width: 48.717948718%;
+}
+
+.row-fluid > .span12, .row-fluid > .multi12 {
+    width: 52.9914529915%;
+}
+
+.row-fluid > .span13, .row-fluid > .multi13 {
+    width: 57.264957265%;
+}
+
+.row-fluid > .span14, .row-fluid > .multi14 {
+    width: 61.5384615385%;
+}
+
+.row-fluid > .span15, .row-fluid > .multi15 {
+    width: 65.81196581200001%;
+}
+
+.row-fluid > .span16, .row-fluid > .multi16 {
+    width: 70.0854700855%;
+}
+
+.row-fluid > .span17, .row-fluid > .multi17 {
+    width: 74.358974359%;
+}
+
+.row-fluid > .span18, .row-fluid > .multi18 {
+    width: 78.6324786325%;
+}
+
+.row-fluid > .span19, .row-fluid > .multi19 {
+    width: 82.905982906%;
+}
+
+.row-fluid > .span20, .row-fluid > .multi20 {
+    width: 87.1794871795%;
+}
+
+.row-fluid > .span21, .row-fluid > .multi21 {
+    width: 91.45299145300001%;
+}
+
+.row-fluid > .span22, .row-fluid > .multi22 {
+    width: 91.45299145300001%;
+}
+
+.row-fluid > .span23, .row-fluid > .multi23 {
+    width: 95.7264957265%;
+}
+
+.row-fluid > .span24, .row-fluid > .multi24 {
+    width: 100%;
+}
+/**
+ * spanの微調整用にblueprintsなどで利用されている方法を流用
+ * jquery ui bootstrapで指定されているspanは画面サイズが小さいのでもう少し細かい単位で生成した方がいいかも。
+ */
+.suffix-1 {
+    padding-right: 40px;
+}
+
+.suffix-2 {
+    padding-right: 80px;
+}
+
+.suffix-3 {
+    padding-right: 120px;
+}
+
+.suffix-4 {
+    padding-right: 160px;
+}
+
+.suffix-5 {
+    padding-right: 200px;
+}
+
+.suffix-6 {
+    padding-right: 240px;
+}
+
+.suffix-7 {
+    padding-right: 280px;
+}
+
+.suffix-8 {
+    padding-right: 320px;
+}
+
+.suffix-9 {
+    padding-right: 360px;
+}
+
+.suffix-10 {
+    padding-right: 400px;
+}
+
+.suffix-11 {
+    padding-right: 440px;
+}
+
+.suffix-12 {
+    padding-right: 480px;
+}
+
+.suffix-13 {
+    padding-right: 520px;
+}
+
+.suffix-14 {
+    padding-right: 560px;
+}
+
+.suffix-15 {
+    padding-right: 600px;
+}
+
+.suffix-16 {
+    padding-right: 640px;
+}
+
+.suffix-17 {
+    padding-right: 680px;
+}
+
+.suffix-18 {
+    padding-right: 720px;
+}
+
+.suffix-19 {
+    padding-right: 760px;
+}
+
+.suffix-20 {
+    padding-right: 800px;
+}
+
+.suffix-21 {
+    padding-right: 840px;
+}
+
+.suffix-22 {
+    padding-right: 880px;
+}
+
+.suffix-23 {
+    padding-right: 920px;
+}
+
+.prefix-1 {
+    padding-left: 40px;
+}
+
+.prefix-2 {
+    padding-left: 80px;
+}
+
+.prefix-3 {
+    padding-left: 120px;
+}
+
+.prefix-4 {
+    padding-left: 160px;
+}
+
+.prefix-5 {
+    padding-left: 200px;
+}
+
+.prefix-6 {
+    padding-left: 240px;
+}
+
+.prefix-7 {
+    padding-left: 280px;
+}
+
+.prefix-8 {
+    padding-left: 320px;
+}
+
+.prefix-9 {
+    padding-left: 360px;
+}
+
+.prefix-10 {
+    padding-left: 400px;
+}
+
+.prefix-11 {
+    padding-left: 440px;
+}
+
+.prefix-12 {
+    padding-left: 480px;
+}
+
+.prefix-13 {
+    padding-left: 520px;
+}
+
+.prefix-14 {
+    padding-left: 560px;
+}
+
+.prefix-15 {
+    padding-left: 600px;
+}
+
+.prefix-16 {
+    padding-left: 640px;
+}
+
+.prefix-17 {
+    padding-left: 680px;
+}
+
+.prefix-18 {
+    padding-left: 720px;
+}
+
+.prefix-19 {
+    padding-left: 760px;
+}
+
+.prefix-20 {
+    padding-left: 800px;
+}
+
+.prefix-21 {
+    padding-left: 840px;
+}
+
+.prefix-22 {
+    padding-left: 880px;
+}
+
+.prefix-23 {
+    padding-left: 920px;
+}
+
+.pull-1 {
+    margin-left: -60px;
+}
+
+.pull-2 {
+    margin-left: -120px;
+}
+
+.pull-3 {
+    margin-left: -180px;
+}
+
+.pull-4 {
+    margin-left: -240px;
+}
+
+.pull-5 {
+    margin-left: -300px;
+}
+
+.pull-6 {
+    margin-left: -360px;
+}
+
+.pull-7 {
+    margin-left: -420px;
+}
+
+.pull-8 {
+    margin-left: -480px;
+}
+
+.pull-9 {
+    margin-left: -360px;
+}
+
+.pull-10 {
+    margin-left: -400px;
+}
+
+.pull-11 {
+    margin-left: -440px;
+}
+
+.pull-12 {
+    margin-left: -480px;
+}
+
+.pull-13 {
+    margin-left: -520px;
+}
+
+.pull-14 {
+    margin-left: -560px;
+}
+
+.pull-15 {
+    margin-left: -600px;
+}
+
+.pull-16 {
+    margin-left: -640px;
+}
+
+.pull-17 {
+    margin-left: -680px;
+}
+
+.pull-18 {
+    margin-left: -720px;
+}
+
+.pull-19 {
+    margin-left: -760px;
+}
+
+.pull-20 {
+    margin-left: -800px;
+}
+
+.pull-21 {
+    margin-left: -840px;
+}
+
+.pull-22 {
+    margin-left: -880px;
+}
+
+.pull-23 {
+    margin-left: -920px;
+}
+
+.pull-24 {
+    margin-left: -960px;
+}
+
+.pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {
+    float: left;
+    position: relative;
+}
+
+.push-1 {
+    margin: 0 -40px 1.5em 40px;
+}
+
+.push-2 {
+    margin: 0 -80px 1.5em 80px;
+}
+
+.push-3 {
+    margin: 0 -120px 1.5em 120px;
+}
+
+.push-4 {
+    margin: 0 -160px 1.5em 160px;
+}
+
+.push-5 {
+    margin: 0 -200px 1.5em 200px;
+}
+
+.push-6 {
+    margin: 0 -240px 1.5em 240px;
+}
+
+.push-7 {
+    margin: 0 -280px 1.5em 280px;
+}
+
+.push-8 {
+    margin: 0 -320px 1.5em 320px;
+}
+
+.push-9 {
+    margin: 0 -360px 1.5em 360px;
+}
+
+.push-10 {
+    margin: 0 -400px 1.5em 400px;
+}
+
+.push-11 {
+    margin: 0 -440px 1.5em 440px;
+}
+
+.push-12 {
+    margin: 0 -480px 1.5em 480px;
+}
+
+.push-13 {
+    margin: 0 -520px 1.5em 520px;
+}
+
+.push-14 {
+    margin: 0 -560px 1.5em 560px;
+}
+
+.push-15 {
+    margin: 0 -600px 1.5em 600px;
+}
+
+.push-16 {
+    margin: 0 -640px 1.5em 640px;
+}
+
+.push-17 {
+    margin: 0 -680px 1.5em 680px;
+}
+
+.push-18 {
+    margin: 0 -720px 1.5em 720px;
+}
+
+.push-19 {
+    margin: 0 -760px 1.5em 760px;
+}
+
+.push-20 {
+    margin: 0 -800px 1.5em 800px;
+}
+
+.push-21 {
+    margin: 0 -840px 1.5em 840px;
+}
+
+.push-22 {
+    margin: 0 -880px 1.5em 880px;
+}
+
+.push-23 {
+    margin: 0 -920px 1.5em 920px;
+}
+
+.push-24 {
+    margin: 0 -960px 1.5em 960px;
+}
+
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {
+    float: right;
+    position: relative;
+}

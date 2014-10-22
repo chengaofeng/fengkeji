@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://alfa2.io/thymeleaf"
+      xml:lang="ja" lang="ja">
+<div th:fragment="forms" th:remove="tag">
+	<form action="" th:action="@{csvExport}" method="post" th:object="${__${csvForm}__}" id="csvExportForm">
+		<input type="hidden" th:field="*{searchList}" />
+	</form>
+	<form action="" th:action="@{csvExportAll}" method="post" th:object="${__${csvForm}__}" id="csvExportAllForm">
+		<s:allhidden form="${__${csvForm}__}" formId="csvExportAllForm" />
+		<input type="hidden" th:field="*{searchList}" th:if="${useItemSaveWhenExportAll}" />
+	</form>
+</div>
+</html>

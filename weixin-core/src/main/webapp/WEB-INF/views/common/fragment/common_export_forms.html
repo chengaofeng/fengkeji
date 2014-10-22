@@ -1,0 +1,10 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://alfa2.io/thymeleaf"
+      xml:lang="ja" lang="ja">
+<div th:fragment="forms" th:remove="tag">
+	<span th:include="common/fragment/common_excel_forms :: forms" th:with="excelForm=${exportForm}, useItemSaveWhenExportAll=${useItemSaveWhenExportAll}" th:remove="tag" />
+	<span th:include="common/fragment/common_csv_forms :: forms" th:with="csvForm=${exportForm}, useItemSaveWhenExportAll=${useItemSaveWhenExportAll}" th:remove="tag" />
+	<span th:include="common/fragment/common_pdf_forms :: forms" th:with="pdfForm=${exportForm}, useItemSaveWhenExportAll=${useItemSaveWhenExportAll}" th:remove="tag" />
+</div>
+</html>

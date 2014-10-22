@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://alfa2.io/thymeleaf"
+      xml:lang="ja" lang="ja">
+<div th:fragment="header" th:remove="tag">
+    <div class="table-info">
+    <span th:if="*{pagingContext != null}">
+        <span th:text="*{offset}+1">1</span> -
+        <span th:text="*{offset}+*{limit}" th:if="*{offset}+*{limit} lt *{total}+1">50</span>
+        <span th:text="*{total}" th:if="*{offset}+*{limit} gt *{total}">50</span> /
+        <span th:text="*{total}" id="table-info-total">001</span> 件
+    </span>
+    <span th:unless="*{pagingContext != null}">
+        <span th:text="*{total}" id="table-info-total">001</span> 件
+    </span>
+    </div>
+</div>
+</html>

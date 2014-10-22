@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://alfa2.io/thymeleaf"
+      xml:lang="ja" lang="ja">
+<div th:fragment="footer" th:remove="tag">
+    <div class="pagination">
+		<span class="table-actions">
+			<button type="button" class="button button-small" th:text="#{button.key.csv}" onclick="rb.form.nodialogAction('csvExportForm')"></button>
+			<button type="button" class="button button-small" th:text="#{button.key.csv.all}" onclick="rb.form.nodialogAction('csvExportAllForm')"></button>
+			<button type="button" class="button button-small" th:text="#{button.key.excel}" onclick="rb.form.nodialogAction('excelExportForm')">excel</button>
+			<button type="button" class="button button-small" th:text="#{button.key.excel.all}" onclick="rb.form.nodialogAction('excelExportAllForm')">excel(all)</button>
+			<button type="button" class="button button-small" th:text="#{button.key.pdf}" onclick="rb.form.nodialogAction('pdfExportForm')">pdf</button>
+			<button type="button" class="button button-small" th:text="#{button.key.pdf.all}" onclick="rb.form.nodialogAction('pdfExportAllForm')">pdf(all)</button>
+		</span>
+        <s:paging pagingContext="*{pagingContext}"/>
+    </div>
+</div>
+</html>

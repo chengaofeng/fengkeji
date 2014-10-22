@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://alfa2.io/thymeleaf"
+      xml:lang="ja" lang="ja">
+<div th:fragment="forms" th:remove="tag">
+	<form action="" th:action="@{show}" method="post" th:object="${__${entityCrudForm}__}" id="showForm" th:target="#{wintarget.masterDetailWindow}" target="masterDetailWindow">
+		<s:linkparamshidden form="${__${entityCrudForm}__}" formId="showForm" />
+	</form>
+	<form action="" th:action="@{createIndex}" method="post" th:object="${__${entityCrudForm}__}" id="createIndexForm" th:target="#{wintarget.masterDetailWindow}" target="masterDetailWindow">
+		<s:linkparamshidden form="${__${entityCrudForm}__}" formId="createIndexForm" />
+	</form>
+	<form action="" th:action="@{createShow}" method="post" th:object="${__${entityCrudForm}__}" id="createForm" th:target="#{wintarget.masterDetailWindow}" target="masterDetailWindow">
+		<s:linkparamshidden form="${__${entityCrudForm}__}" formId="createForm" />
+	</form>
+	<form action="" th:action="@{updateShow}" method="post" th:object="${__${entityCrudForm}__}" id="updateForm" th:target="#{wintarget.masterDetailWindow}" target="masterDetailWindow">
+		<s:linkparamshidden form="${__${entityCrudForm}__}" formId="updateForm" />
+	</form>
+	<form action="" th:action="@{deleteShow}" method="post" th:object="${__${entityCrudForm}__}" id="deleteForm" th:target="#{wintarget.masterDetailWindow}" target="masterDetailWindow">
+		<s:linkparamshidden form="${__${entityCrudForm}__}" formId="deleteForm" />
+	</form>
+</div>
+</html>

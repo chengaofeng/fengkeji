@@ -1,0 +1,10 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:s="http://alfa2.io/thymeleaf"
+      xml:lang="ja" lang="ja">
+<div th:fragment="form" th:remove="tag">
+	<form action="" th:action="@{/sub/subsuser/listIndex}" method="post" id="subsuserForm" th:target="#{wintarget.subwindow}" target="subwindow">
+		<input type="hidden" id="userId" name="userId" />
+	</form>
+</div>
+</html>

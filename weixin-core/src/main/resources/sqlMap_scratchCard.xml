@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap  PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd"> 
+<sqlMap namespace="ScratchCard"> 
+   
+   <select id="selectScratchCard001" resultClass="org.fengkeji.weixin.entity.ScratchCard"> 
+        select  
+        scratch_card_id as scratchCardId,
+        scratch_card_money as scratchCardMoney,
+        scratch_card_num as scratchCardNum,
+        scratch_card_last as scratchCardLast,
+        scratch_card_content as scratchCardContent,
+        scratch_card_type as scratchCardType,
+        scratch_card_prob as scratchCardProb,
+        limit_time as limitTime,
+        insert_time as insertTime
+        from scratch_card 
+   </select> 
+   
+      <select id="selectScratchCard002" resultClass="org.fengkeji.weixin.entity.ScratchCard"> 
+        select  
+        scratch_card_id as scratchCardId,
+        scratch_card_money as scratchCardMoney,
+        scratch_card_num as scratchCardNum,
+        scratch_card_last as scratchCardLast,
+        scratch_card_prob as scratchCardProb,
+        limit_time as limitTime
+        from scratch_card 
+        where scratch_card_id=#scratchCardId#
+   </select> 
+   
+      <update id="updateScratchCard001" parameterClass="org.fengkeji.weixin.entity.ScratchCard">
+        UPDATE scratch_card
+        SET scratch_card_last = #scratchCardLast#
+        where scratch_card_id=#scratchCardId#
+    </update>
+</sqlMap> 

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<div th:fragment="header" th:remove="tag">
+	<div th:fragment="header" th:remove="tag" fragment="header">
+		<div class="row-fluid" style="display: none;">
+			<div class="message-container">
+				<div id="messageArea" style="display: none;">
+					<table class="wx-message">
+						<thead>
+							<tr>
+								<th class="wx-outLabelMsg">コード</th>
+								<th class="wx-outLabelMsg">メッセージ内容</th>
+							</tr>
+						</thead>
+						<tbody>
+<!-- 							<div id="wxMessage" th:remove="tag" th:if="${fieldIds == null}"> -->
+<!-- 								<s:wxmessage field="*" line="true" /> -->
+<!-- 							</div> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</html>
